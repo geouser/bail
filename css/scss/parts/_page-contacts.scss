@@ -26,51 +26,6 @@
 			left: 0;
 			right: 0;
 		}
-
-		.controls {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			background-color: #fff;
-			position: absolute;
-			box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-			-o-transform: translateY(-50%);
-			transform: translateY(-50%);
-
-			&:after {
-				content: '';
-				width: 60%;
-				position: absolute;
-				top: 50%;
-				left: 20%;
-				height: 1px;
-				background-color: #eee;
-				-webkit-transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				-o-transform: translateY(-50%);
-				transform: translateY(-50%);
-			}
-
-			.map-control {
-				width: 48px;
-				height: 48px;
-				border: 0;
-				display: block;
-				background-color: #fff;
-				font-family: $cib;
-				font-size: 26px;
-				color: #AAAAAA;
-				-webkit-transition: all 0.3s ease;
-				-o-transition: all 0.3s ease;
-				transition: all 0.3s ease;
-
-				&:hover {
-					color: #95C83D;
-				}
-			}
-		}
 	}
 
 	&__info {
@@ -162,5 +117,51 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0 5px;
+	}
+}
+
+.zoom-controls {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	background-color: #fff;
+	position: absolute;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 2;
+
+	&:after {
+		content: '';
+		width: 60%;
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		height: 1px;
+		background-color: #eee;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.map-control {
+		width: 48px;
+		height: 48px;
+		border: 0;
+		display: block;
+		background-color: #fff;
+		font-family: $cib;
+		font-size: 26px;
+		color: #AAAAAA;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: #95C83D;
+		}
 	}
 }

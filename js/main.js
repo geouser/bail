@@ -263,11 +263,11 @@ jQuery(document).ready(function($) {
                                 LOCATION GOOGLE MAP
     ---------------------------*/
     var map;
-    function googleMap_initialize() {
+    function locationMap_initialize() {
         var lat = 40.34503137704171;
         var long = 49.838739931583405;
 
-        var mapCenterCoord = new google.maps.LatLng(lat, long);
+        var mapCenterCoord = new google.maps.LatLng(lat, long-0.002);
         var mapMarkerCoord = new google.maps.LatLng(lat, long);
 
 
@@ -336,10 +336,20 @@ jQuery(document).ready(function($) {
 
             map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
         });
+
+        $('.gm-plus').on('click', function(event) {
+            event.preventDefault();
+            map.setZoom( map.getZoom() + 1 )
+        });
+
+        $('.gm-minus').on('click', function(event) {
+            event.preventDefault();
+            map.setZoom( map.getZoom() - 1 )
+        });
     }
 
     if ( $('#location_map').length > 0) {
-        googleMap_initialize();   
+        locationMap_initialize();   
     }
 
 }); // end file
