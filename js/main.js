@@ -256,4 +256,90 @@ jQuery(document).ready(function($) {
         googleMap_initialize();   
     }
 
+
+
+
+    /*---------------------------
+                                LOCATION GOOGLE MAP
+    ---------------------------*/
+    var map;
+    function googleMap_initialize() {
+        var lat = 40.34503137704171;
+        var long = 49.838739931583405;
+
+        var mapCenterCoord = new google.maps.LatLng(lat, long);
+        var mapMarkerCoord = new google.maps.LatLng(lat, long);
+
+
+        var mapOptions = {
+            center: mapCenterCoord,
+            zoom: 17,
+            //draggable: false,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
+        };
+
+        map = new google.maps.Map(document.getElementById('location_map'), mapOptions);
+        var markerImage = new google.maps.MarkerImage('images/location.png');
+        var marker = new google.maps.Marker({
+            icon: markerImage,
+            position: mapMarkerCoord, 
+            map: map,
+            title:"Park Bayil"
+        });
+
+        var clinic = new google.maps.Marker({
+            icon: new google.maps.MarkerImage('images/clinic.png'),
+            position: new google.maps.LatLng(40.346331521350116, 49.83702063560486), 
+            map: map,
+            title:"Поликлиника"
+        });
+
+        map.addListener('click', function(e) {
+            console.log('{lat: '+e.latLng.lat()+', lng: '+e.latLng.lng()+'},');
+        });
+
+        var polygon = [
+            {lat: 40.345348238420115, lng: 49.83832150697708},
+            {lat: 40.34544431867299, lng: 49.83879894018173},
+            {lat: 40.34502319995417, lng: 49.83902156352997},
+            {lat: 40.34487805648554, lng: 49.83853340148926},
+            {lat: 40.345348238420115, lng: 49.83832150697708}
+        ];
+
+        // Construct the polygon.
+        var bayil_polygon = new google.maps.Polygon({
+            paths: polygon,
+            strokeColor: '#95C83D',
+            strokeWeight: 3,
+            fillOpacity: 0
+        });
+        bayil_polygon.setMap(map);
+
+        $(window).resize(function (){
+            map.setCenter(mapCenterCoord);
+        });
+
+        $('.js-map-satellite').on('click', function(event) {
+            event.preventDefault();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+
+            map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+        });
+
+        $('.js-map-map').on('click', function(event) {
+            event.preventDefault();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+
+            map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+        });
+    }
+
+    if ( $('#location_map').length > 0) {
+        googleMap_initialize();   
+    }
+
 }); // end file

@@ -47,7 +47,7 @@ body {
 main {
     position: relative;
     @include flex($direction: column, $justify: center);
-    padding: 130px 20px 100px;
+    padding: 150px 20px 100px;
     min-height: 100%;
     webkit-box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
       -moz-box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
