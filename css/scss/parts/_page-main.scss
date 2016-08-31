@@ -50,6 +50,36 @@
 			line-height: 19.2px;
 			margin-bottom: 40px;
 		}
+		@include m1000 {
+			h2 {
+				font-size: 34px;
+				line-height: normal;
+				br {
+					display: none;
+				}
+			}
+		}
+		@include m600 {
+			h2 {
+				font-size: 28px;
+			}
+			p {
+				font-size: 14px;
+				padding-right: 20px;
+				br {
+					display: none;
+				}
+			}
+		}
+		@include m400 {
+			h2 {
+				font-size: 26px;
+			}
+			p {
+				font-size: 13px;
+				margin-bottom: 20px;
+			}
+		}
 	}
 	
 	.slick-dots {
@@ -81,5 +111,32 @@
 			background-color: $yellow;
 			box-shadow: 0 0 0 5px rgba(229, 166, 39, 0.5);
 		}
+	}
+
+	@include m1200 {
+		padding-left: 80px;
+    	padding-right: 140px;
+    	.slide__container {
+    		width: 100%;
+    	}
+    	.slick-dots {
+    		width: 100%;
+    		text-align: center;
+    		left: 0;
+    	}
+	}
+	@include m1000 {
+		padding-left: 40px;
+    	padding-right: 60px;
+	}
+	@include m600 {
+		padding-left: 10px;
+		.slick-dots {
+			bottom: -60px;
+		}
+	}
+	@include m400 {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
