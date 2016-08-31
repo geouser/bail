@@ -83,9 +83,9 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   SCROLL-CONTENT
     ---------------------------*/
-    $(window).on('load resize', function(event) {
-        $('.content-scroll').height( $(this).height()-300 )
-    });
+    /*$(window).on('load resize', function(event) {
+        $'.content-scroll').height( $(this).height()-300 )
+    });*/
 
     if ( $('.scroll-area').length > 0 ) {
         $('.scroll-area').slimScroll({
