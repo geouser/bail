@@ -7,10 +7,14 @@ window.params = {
 
 jQuery(document).ready(function($) {
 
-    $( "main" ).delay( 2000 ).css({
-        opacity: '1',
-        visibility: 'visible'
-    });
+    $( "main" ).delay( 500 ).queue(function(next) {
+        $(this).css({
+            opacity: '1',
+            visibility: 'visible'
+        });
+
+        next(); 
+    })
 
     /*---------------------------
                                   ADD CLASS ON SCROLL

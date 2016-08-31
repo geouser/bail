@@ -53,9 +53,9 @@ main {
       -moz-box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
            box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
 
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
 
     opacity: 0;
     visibility: hidden;
