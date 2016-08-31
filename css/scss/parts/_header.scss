@@ -8,24 +8,31 @@
     @include transition(all, .4s);
     
         /*.................media.............*/
-        @include m1000 {
+        @include m1200 {
+            display: block;
+            padding: 20px 0;
+            overflow: scroll;
             @include position(fixed, 0, auto, auto, -100%);
             width: 260px !important;
             height: 100%;
             text-align: center;
-            background-color: #fff;
             margin-top: 0;
             padding: 20px 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: 2px 0 10px rgba(0,0,0, .4);
              
             &.active { left: 0;}
         }
         /*.............end media..............*/
     &__info {
-        width: 40%;
         text-align: right;
         color: #444;
         height: 100%;
+        @include m1200 {
+            text-align: center;
+            margin-top: 40px;
+            height: auto;
+        }
     }
 }
 
@@ -40,7 +47,7 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
-     display: inline-block;
+    display: inline-block;
     vertical-align: middle;
     ul {
         list-style-type: none;
@@ -64,22 +71,38 @@
                     font: 24px $cor;
                 }
             }
-        }
-
             /*.................media.............*/
-            @include m1000 { 
-                display: block;
-                height: 100%;
-                overflow: scroll;
-                position: relative;
-                li a  {   
-                    margin: 0 0 25px 0;
-                    &.active {color: #ECCC1D;}
-                    &:hover  {background: transparent;}
-                } 
+            @include m1600 {
+                margin: 0 6px;
+                &:nth-of-type(1) {
+                    margin-left: 15px;
+                }
             }
-            /*.............end media.............*/
+            @include m1300 {
+                a {
+                    font-size: 14px;
+                }
+            }
+            @include m1200 {
+                display: block;
+                text-align: center;
+                margin: 10px auto;
+                &:nth-of-type(1) {
+                    margin-left: auto;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
     }
+
+    /*.................media.............*/
+    @include m1200 { 
+        display: block;
+        position: relative;
+    }
+    /*.............end media.............*/
 }
 
 
@@ -92,11 +115,11 @@
     display: none;
     width: 50px;
     height: 50px;
-    @include position(fixed, 15px, 15px, auto, auto);
+    @include position(fixed, 15px, 7px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
-    background-color: salmon;
+    background-color: $yellow;
     border: none;
     -webkit-border-radius: 4px;
             border-radius: 4px;
@@ -121,7 +144,7 @@
     &.active .middle_line  {   width: 0; left: 50%;}
 
         /*.................media.............*/
-        @include m1000 {
+        @include m1200 {
             display: block;
         }
         /*..............end media.............*/
@@ -141,6 +164,16 @@
         background-image: url("../images/sprite.png");
         background-position: -40px -62px; width: 24px; height: 25px; 
         margin-right: 15px;
+    }
+    @include m1300 {
+        font-size: 18px;
+        &:before { 
+            margin-left: 6px;
+        }
+    }
+    @include m1200 { 
+        display: block;
+        margin: 20px auto;
     }
 }
 .social {
@@ -162,6 +195,18 @@
         &--tw {
             background-position: -5px -62px;
         }
+         /*.................media.............*/
+         @include m1600 {
+            margin: 0 3px;
+         }
+    }
+     /*.................media.............*/
+    @include m1600 {
+         margin-left: 20px;
+    }
+     @include m1200 { 
+        display: block;
+        margin: 20px auto;
     }
 }
 
@@ -186,6 +231,25 @@
         &:hover {
             background-color: #e5a627;
             color: #fff;
+        }
+    }
+     /*.................media.............*/
+     @include m1600 {
+         margin-left: 30px;
+     }
+     @include m1300 {
+        margin-left: 10px; 
+     }
+    @include m1200 {
+        display: block;
+        width: 100%;
+        height: 37px;
+        margin: 20px auto 20px;
+        &__item {
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            width: 28%;
         }
     }
 }
