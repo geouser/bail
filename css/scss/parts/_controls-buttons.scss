@@ -77,4 +77,11 @@
 			  		animation: pulse-rose 1.25s infinite linear;
 		}
 	}
+    @include m1000 { 
+        right: 20px;
+        button {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
