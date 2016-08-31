@@ -41,8 +41,15 @@
 			background-color: #E59C0B;
 		}
 	}
+	@include m700 {
+		height: 40px;
+		padding: 0 20px;
+	}
 }
 
 a.button {
 	line-height: 52px;
+	@include m700 {
+		line-height: 42px;
+	}
 }
