@@ -1,14 +1,14 @@
-         
+        
 .mainHeader {
-    @include position(absolute, 0, auto, auto, 0);
-    width: 100%;
+    @include flex();
+    @include position(absolute, 20px, 20px, auto, 20px);
     z-index: 100;
     background: #fff;
     margin: 0;
     @include transition(all, .4s);
     
         /*.................media.............*/
-        @include m800 {
+        @include m1000 {
             @include position(fixed, 0, auto, auto, -100%);
             width: 260px !important;
             height: 100%;
@@ -19,18 +19,23 @@
             z-index: 100;
              
             &.active { left: 0;}
-            .wrapper {
-                   @include flexDirection(column);
-                   width: 100%;
-            }
         }
         /*.............end media..............*/
 }
 
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+        display: block;
+    }
+}
 
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+     display: inline-block;
+    vertical-align: middle;
     ul {
         @include flex();
         list-style-type: none;
@@ -43,7 +48,7 @@
         }
 
             /*.................media.............*/
-            @include m800 { 
+            @include m1000 { 
                 display: block;
                 height: 100%;
                 overflow: scroll;
@@ -97,7 +102,7 @@
     &.active .middle_line  {   width: 0; left: 50%;}
 
         /*.................media.............*/
-        @include m800 {
+        @include m1000 {
             display: block;
         }
         /*..............end media.............*/

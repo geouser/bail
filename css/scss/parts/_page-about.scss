@@ -1,0 +1,97 @@
+.about {
+	-webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+	-webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    height: 100%;
+}
+
+
+
+
+.about-page-slider {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	margin-bottom: 0;
+
+	.slick-list,
+	.slick-track,
+	.slide {
+		height: 100%;
+	}
+
+	.slide {
+		background-size: cover;
+	}
+}
+
+.slider-controls {
+	position: fixed;
+	top: 50%;
+	right: 20px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	button {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		display: block;
+		border: 0;
+		background-color: #fff;
+
+		&.next {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+.content-scroll {
+	position: relative;
+	z-index: 5;
+	background-color: #fff;
+	width: 540px;
+	max-height: 610px;
+	padding: 25px 18px 25px 25px;
+
+	.title {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.scroll-area {
+		height: 100%!important;
+		padding-right: 30px;
+
+		font-size: 16px;
+		line-height: 24px;
+
+		p {
+			margin-bottom: 25px;
+		}
+	}
+
+	.slimScrollRail {
+		right: 7px!important;
+	}
+
+	.slimScrollBar {
+		opacity: 1!important;
+		width: 13px!important;
+		height: 13px!important;
+		border-radius: 50% 50%!important;
+		background-color: #CCCCCC!important;
+	}
+}

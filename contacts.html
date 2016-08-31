@@ -66,37 +66,41 @@
 
         <!--=================================================================================================-->
                                                     <!-- MAIN -->
-       <main class="indexPage">
+       <main class="contacts no-shadow">
 
-            <div class="main-page-slider">
-                <div class="slide">
-                    <div class="slide__container">
-                        <h2>Выбирайте квартиру, думая о будущих <br>видах из панорамных окон!</h2>
-                        <p>Позвольте себе такую роскошь, потому что у нас есть, что предложить. <br>Куда бы вы ни посмотрели, каждая квартира уникальна. <br>Что вы предпочитаете, вид в парк или на парк?</p>
-                        <a href="#" class="button button--yellow">Выбрать квартиру</a>    
-                    </div>
-                </div> <!-- end slide -->
-                <div class="slide">
-                    <div class="slide__container">
-                        <h2>Neque porro quisquam est qui dolorem ipsum <br>sit amet, consectetur, adipisci velit</h2>
-                        <p>Pellentesque faucibus laoreet purus, non congue mauris malesuada aliquam. <br>Fusce sollicitudin enim lectus, ac aliquet diam bibendum at.</p>
-                        <a href="#" class="button button--yellow">Выбрать квартиру</a>    
-                    </div>
-                </div> <!-- end slide -->
-            </div> <!-- end main-page-slider -->
+            <div class="contacts__info">
+                <p class="title">Контакты</p>
+
+                <div class="address">
+                    <p>Сабаильский Район. <br>Нефтчи Гурбан Аббасов 27</p>
+                </div>
+
+                <div class="email">
+                    <p><a href="mailto:info@parkbayil.az">info@parkbayil.az</a></p>
+                </div>
+
+                <div class="phone">
+                    <p><a href="tel:(+99450) 404 49 99">(+99450) 404 49 99</a></p>
+                    <p><a href="tel:(+99455) 559 59 99">(+99455) 559 59 99</a></p>
+                </div>
+            </div> <!-- end contacts__info -->
+
+            <div class="contacts__map">
+                <div class="map" id="map_canvas"></div>
+                <div class="controls">
+                    <button class="gm-plus map-control">+</button>
+                    <button class="gm-minus map-control">‒</button>
+                </div>
+            </div>
 
        </main><!-- end main -->
 
 
-       <div class="control-buttons">
-           <button class="phone pulse"></button>
-           <button class="email pulse"></button>
-       </div>
-
 
         <!--=================================================================================================-->
                                                     <!-- FOOTER -->
-       <footer>
+       <footer class="footer--grey">
+            <a class="studio-link" href="#"><img src="images/studio-logo.png" alt="Gamidov Studio"></a>
             <p class="copyright">© 2016 PARK BAYIL. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
             <p class="documents"><i class="doc"></i><a href="#">ДОКУМЕНТЫ</a></p>
             <p class="address"><i class="pin"></i>САБАИЛЬСКИЙ РАЙОН. НЕФТЧИ ГУРБАН АББАСОВ 27</p>
