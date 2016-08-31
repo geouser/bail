@@ -147,8 +147,6 @@
     display: inline-block;
     vertical-align: middle;
     margin-left: 40px;
-    max-height: 110px;
-    overflow: hidden;
     &__item {
         background-image: url("../images/sprite.png");
         width: 30px; height: 30px;
@@ -173,6 +171,8 @@
     height: 100%;
     display: inline-block;
     vertical-align: middle;
+    max-height: 110px;
+    overflow: hidden;
     &__item {
         height: 33.33%;
         display: block;
