@@ -75,10 +75,9 @@ jQuery(document).ready(function($) {
     $('.main-page-slider').slick({
         dots: true,
         infinite: true,
-        speed: 500,
-        fade: true,
+        speed: 900,
         arrows: false,
-        cssEase: 'linear',
+        cssEase: 'ease',
         adaptiveHeight: false
     })
 

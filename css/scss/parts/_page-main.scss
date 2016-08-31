@@ -4,6 +4,12 @@
 	margin-bottom: 0;
 
 	.slide {
+	    &.slick-current {
+	    	-webkit-animation: zoom .8s;
+	    	   -moz-animation: zoom .8s;
+	    	     -o-animation: zoom .8s;
+	    	        animation: zoom .8s;
+	    }
 		&__container {
 			width: 800px;
 			position: relative;
@@ -146,4 +152,25 @@
 		padding-right: 0;
 		padding-left: 0;
 	}
+}
+
+@-webkit-keyframes zoom {
+  0%   	{ transform: scale(0);}
+  30% 	{ transform: scale(.2); }
+  100%  { transform: scale(1); }
+}
+@-moz-keyframes zoom {
+  0%   	{ transform: scale(0);}
+  30% 	{ transform: scale(.2); }
+  100%  { transform: scale(1); }
+}
+@-o-keyframes zoom {
+   0%   	{ transform: scale(0);}
+  30% 	{ transform: scale(.2); }
+  100%  { transform: scale(1); }
+}
+@keyframes zoom {
+  0%   	{ transform: scale(0);}
+  30% 	{ transform: scale(.2); }
+  100%  { transform: scale(1); }
 }
