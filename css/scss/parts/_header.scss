@@ -21,6 +21,12 @@
             &.active { left: 0;}
         }
         /*.............end media..............*/
+    &__info {
+        width: 40%;
+        text-align: right;
+        color: #444;
+        height: 100%;
+    }
 }
 
 .logo {
@@ -37,14 +43,27 @@
      display: inline-block;
     vertical-align: middle;
     ul {
-        @include flex();
         list-style-type: none;
-        a {
+        li {
             display: inline-block;
-            margin: 0 20px;
-            text-decoration: none;
-            @include transition(all, .2s);             
-            &:hover {}
+            vertical-align: baseline;
+            margin: 0 15px;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font: 16px $or;
+                color: #333;
+                @include transition(all, .2s);             
+                &:hover {}
+            }
+            &:nth-of-type(1) {
+                margin-left: 30px;
+            }
+            &:nth-of-type(3) {
+                a {
+                    font: 24px $cor;
+                }
+            }
         }
 
             /*.................media.............*/
@@ -107,4 +126,66 @@
         }
         /*..............end media.............*/
 
+}
+
+
+.tel {
+    display: inline-block;
+    vertical-align: middle;
+    font: 20px $or;
+    color: #444;
+    &:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        background-image: url("../images/sprite.png");
+        background-position: -40px -62px; width: 24px; height: 25px; 
+        margin-right: 15px;
+    }
+}
+.social {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    max-height: 110px;
+    overflow: hidden;
+    &__item {
+        background-image: url("../images/sprite.png");
+        width: 30px; height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 6px;
+        &--fb {
+            background-position: -5px -27px;
+        }
+        &--inst {
+            background-position: -40px -27px;
+        }
+        &--tw {
+            background-position: -5px -62px;
+        }
+    }
+}
+
+.lang {
+    margin-left: 55px;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    &__item {
+        height: 33.33%;
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #EEE;
+        font: 12px/37px $cib;
+        text-transform: uppercase;
+        color: #444;
+        &.active,
+        &:hover {
+            background-color: #e5a627;
+            color: #fff;
+        }
+    }
 }
