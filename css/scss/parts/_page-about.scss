@@ -51,8 +51,35 @@
 		border: 0;
 		background-color: #fff;
 
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 15px;
+			height: 15px;
+			-webkit-transform: translate(-50%, -50%) rotate(45deg);
+			-ms-transform: translate(-50%, -50%) rotate(45deg);
+			-o-transform: translate(-50%, -50%) rotate(45deg);
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+
 		&.next {
 			margin-bottom: 10px;
+
+			&:after {
+				border-top: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				margin-left: -5px;
+			}
+		}
+
+		&.prev {
+			&:after {
+				border-bottom: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				margin-left: 5px;
+			}
 		}
 	}
 }
