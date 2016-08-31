@@ -47,15 +47,15 @@ body {
 main {
     position: relative;
     @include flex($direction: column, $justify: center);
-    padding: 130px 20px 100px;
+    padding: 150px 20px 100px;
     min-height: 100%;
     webkit-box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
       -moz-box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
            box-shadow: inset 0px -360px 190px -190px rgba(0,48,64,0.5);
 
-    -webkit-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    transition: opacity 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 
     opacity: 0;
     visibility: hidden;

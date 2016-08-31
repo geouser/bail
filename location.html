@@ -66,45 +66,44 @@
 
         <!--=================================================================================================-->
                                                     <!-- MAIN -->
-       <main class="contacts no-shadow">
-
-            <div class="contacts__info">
-                <p class="title">Контакты</p>
-
-                <div class="address">
-                    <p>Сабаильский Район. <br>Нефтчи Гурбан Аббасов 27</p>
-                </div>
-
-                <div class="email">
-                    <p><a href="mailto:info@parkbayil.az">info@parkbayil.az</a></p>
-                </div>
-
-                <div class="phone">
-                    <p><a href="tel:(+99450) 404 49 99">(+99450) 404 49 99</a></p>
-                    <p><a href="tel:(+99455) 559 59 99">(+99455) 559 59 99</a></p>
-                </div>
-            </div> <!-- end contacts__info -->
-
-            <div class="contacts__map">
-                <div class="map" id="map_canvas"></div>
+        <main class="location">
+    
+            <div class="location__map">
+                <div class="map" id="location_map"></div>
                 <div class="zoom-controls">
                     <button class="gm-plus map-control">+</button>
                     <button class="gm-minus map-control">‒</button>
                 </div>
-            </div>
+            </div> <!-- end main-page-slider -->
 
-       </main><!-- end main -->
+            <div class="location__info">
+                <div class="content-scroll content-scroll--location">
+                    <p class="title">Месторасположение</p>
 
+                    <div class="scroll-area">
+                        <p>PARK BAYIL возводится прямо напротив новой части знаменитого Бакинского приморского бульвара и площади Государственного Флага. Перед окнами комплекса открывается великолепный вид на Каспий, а также красивейшие урбанистические панорамы.</p>
+                        <p>Жилой комплекс находится максимально близко к центральной точке города, что  делает жизнь комфортной благодаря развитой инфраструктуре.  Всего лишь в паре минут пешей прогулки находится главное место отдыха горожан –Бакинский приморский бульвар, а прямо у ворот комплекса раскинулся один из старейших парков города – Баиловский сад.</p>
+                        <p>PARK BAYIL отличает исключительно удобная дислокация относительно основных городских магистралей. Здесь исключены какие-либо транспортные сложности. Выезд на Южное, Западное и Северное магистральные направления практически мгновенный – достаточно свернуть из квартала, чтобы оказаться на скоростной трассе и выбрать нужное</p>
+                    </div>
+                </div>
+
+                <div class="map-controls">
+                    <button class="js-map-satellite active"><i class="satellite"></i><span>Спутник</span></button>
+                    <button class="js-map-map"><i class="map"></i><span>На карте</span></button>
+                </div>
+            </div> <!-- end location__info -->
+    
+        </main><!-- end main -->
 
 
         <!--=================================================================================================-->
                                                     <!-- FOOTER -->
-       <footer class="footer--grey">
+        <footer>
             <a class="studio-link" href="#"><img src="images/studio-logo.png" alt="Gamidov Studio"></a>
             <p class="copyright">© 2016 PARK BAYIL. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
             <p class="documents"><i class="doc"></i><a href="#">ДОКУМЕНТЫ</a></p>
             <p class="address"><i class="pin"></i>САБАИЛЬСКИЙ РАЙОН. НЕФТЧИ ГУРБАН АББАСОВ 27</p>
-       </footer><!-- end footer -->
+        </footer><!-- end footer -->
 
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
@@ -123,6 +122,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB-S5heOTV4eiDgfZsG7HMN5tD0DRQYryk"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
