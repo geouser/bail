@@ -69,6 +69,9 @@ main {
         -webkit-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
+        @media (max-height: 450px) {
+          height: auto;
+        }
     }
 
     @include m800 {

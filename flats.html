@@ -17,6 +17,7 @@
         <!--<link rel="shortcut icon" href="images/favicon.ico">-->
         
         <link rel="stylesheet" href="css/general.css">
+        
     </head>
     <body>
 
@@ -34,9 +35,9 @@
                         <li><a href="about.html">О Проекте</a></li>
                         <li><a href="location.html">Расположение</a></li>
                         <li><a href="#">БаиловЪ</a></li>
-                        <li><a href="#">Выбор квартиры</a></li>
+                        <li><a href="#" class="active">Выбор квартиры</a></li>
                         <li><a href="#">Галерея</a></li>
-                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav><!-- end nav -->
             </div>
@@ -66,48 +67,63 @@
 
         <!--=================================================================================================-->
                                                     <!-- MAIN -->
-       <main class="contacts no-shadow">
+       <main class="housePage">
+            
+            <!--=================================================================================================-->
+                                                    <!-- HOUSE -->
+            <div id="house">
+                <button class="floorPointer" data-floor="floor-1">этаж 1</button>
+                <button class="floorPointer" data-floor="floor-2">этаж 2</button>
+                <button class="floorPointer" data-floor="floor-3">этаж 3</button>
+            </div>
 
-            <div class="contacts__info">
-                <p class="title">Контакты</p>
 
-                <div class="address">
-                    <p>Сабаильский Район. <br>Нефтчи Гурбан Аббасов 27</p>
+            <div class="popupContainer">
+                <button class="closePopup">x</button>
+                <!--=================================================================================================-->
+                                                        <!-- FLOORS -->
+                <div id="floors">
+                    <div class="floors__floor" id="floor-1">
+                        1
+                        <button class="flatPointer" data-floor="flat-3">квартира 3</button>
+                    </div>
+                    <div class="floors__floor" id="floor-2">
+                        2
+                    </div>
+                    <div class="floors__floor" id="floor-3">
+                        3
+                    </div>
+                    <div class="floors__floor" id="floor-4">
+                        4
+                    </div>
+                    <div class="floors__floor" id="floor-5">
+                        5
+                    </div>
+                    <div class="floors__floor" id="floor-6">
+                        6
+                    </div>
                 </div>
 
-                <div class="email">
-                    <p><a href="mailto:info@parkbayil.az">info@parkbayil.az</a></p>
-                </div>
-
-                <div class="phone">
-                    <p><a href="tel:(+99450) 404 49 99">(+99450) 404 49 99</a></p>
-                    <p><a href="tel:(+99455) 559 59 99">(+99455) 559 59 99</a></p>
-                </div>
-            </div> <!-- end contacts__info -->
-
-            <div class="contacts__map">
-                <div class="map" id="map_canvas"></div>
-                <div class="zoom-controls">
-                    <button class="gm-plus map-control">+</button>
-                    <button class="gm-minus map-control">‒</button>
+                <!--=================================================================================================-->
+                                                        <!-- FLATS -->
+                <div id="flats">
+                    
                 </div>
             </div>
 
        </main><!-- end main -->
 
 
-
         <!--=================================================================================================-->
                                                     <!-- FOOTER -->
-       <footer class="footer--grey">
-            <a class="studio-link" href="#"><img src="images/studio-logo.png" alt="Gamidov Studio"></a>
+       <footer>
             <p class="copyright">© 2016 PARK BAYIL. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
             <p class="documents"><i class="doc"></i><a href="#">ДОКУМЕНТЫ</a></p>
             <p class="address"><i class="pin"></i>САБАИЛЬСКИЙ РАЙОН. НЕФТЧИ ГУРБАН АББАСОВ 27</p>
        </footer><!-- end footer -->
 
 
-  	    <!-- //////////////////////////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////////////////////////// -->
 
         <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
 
@@ -128,5 +144,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="js/house.js"></script>
     </body>
 </html>

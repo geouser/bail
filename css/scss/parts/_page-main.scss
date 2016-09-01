@@ -153,6 +153,17 @@
 		padding-right: 0;
 		padding-left: 0;
 	}
+	@media (max-height: 500px) {
+		.slick-dots {
+			bottom: -50px;
+		}
+    }
+	@media (max-height: 450px) {
+		margin-bottom: 10px;
+      	.slick-dots {
+			bottom: -10px;
+		}
+    }
 }
 
 @-webkit-keyframes zoom {
