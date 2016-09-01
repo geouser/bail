@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
         dots: false,
         infinite: true,
         speed: 500,
-        fade: false,
+        fade: true,
         arrows: true
     });
 
