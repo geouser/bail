@@ -69,47 +69,164 @@
                                                     <!-- MAIN -->
        <main class="housePage">
             
+
             <!--=================================================================================================-->
                                                     <!-- HOUSE -->
             <div id="house">
+                <img src="images/house.jpg" alt="">
                 <button class="floorPointer" data-floor="floor-1">этаж 1</button>
                 <button class="floorPointer" data-floor="floor-2">этаж 2</button>
                 <button class="floorPointer" data-floor="floor-3">этаж 3</button>
-            </div>
+                <button class="floorPointer" data-floor="floor-4">этаж 4</button>
+                <button class="floorPointer" data-floor="floor-5">этаж 5</button>
+                <button class="floorPointer" data-floor="floor-6">этаж 6</button>
+            </div><!-- END HOUSE -->
+
+
+
 
 
             <div class="popupContainer">
+
                 <button class="closePopup">x</button>
+
+
+
+
+
                 <!--=================================================================================================-->
                                                         <!-- FLOORS -->
-                <div id="floors">
-                    <div class="floors__floor" id="floor-1">
-                        1
-                        <button class="flatPointer" data-floor="flat-3">квартира 3</button>
+                <div id="floors" class="shown floors">
+                    <p class="floors__title">Выбрать квартиру</p>
+
+                    <div class="floorSlider">
+                        <div class="floors__floor" id="floor-1">                  
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-1">
+                        </div>
+                        <div class="floors__floor" id="floor-2">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-2">
+                        </div>
+                        <div class="floors__floor" id="floor-3">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-3">
+                        </div>
+                        <div class="floors__floor" id="floor-4">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-4">
+                        </div>
+                        <div class="floors__floor" id="floor-5">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-5">
+                        </div>
+                        <div class="floors__floor" id="floor-6">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-6">
+                        </div>
                     </div>
-                    <div class="floors__floor" id="floor-2">
-                        2
+
+                    <div class="info__num info__num--order"><!-- текущий єтаж -->
+                        <p class="info__num__num"> 
+                            <i></i>
+                            <span>этаж</span>
+                        </p>
                     </div>
-                    <div class="floors__floor" id="floor-3">
-                        3
+
+                    <div class="info__right"><!-- информация в числах справа -->
+                        <div class="info__num info__num--number">
+                            <p class="info__num__num"> 
+                                <i>33</i>
+                                <span>№ КВАРТИРЫ</span>
+                            </p>
+                        </div>
+                        <div class="info__num info__num--square">
+                            <p class="info__num__num"> 
+                                <i>4</i>
+                                <span>КОМНАТЫ</span>
+                            </p>
+                        </div>
+                        <div class="info__num info__num--flats">
+                            <p class="info__num__num"> 
+                                <i>128.5</i>
+                                <span>ПЛОЩАДЬ, М²</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="floors__floor" id="floor-4">
-                        4
-                    </div>
-                    <div class="floors__floor" id="floor-5">
-                        5
-                    </div>
-                    <div class="floors__floor" id="floor-6">
-                        6
-                    </div>
-                </div>
+
+                </div><!-- END FLOORS -->
+
+
+
+
+
 
                 <!--=================================================================================================-->
                                                         <!-- FLATS -->
-                <div id="flats">
+                <div id="flats" class="flats">
+                    <button class="goBack">Назад</button>
                     
-                </div>
-            </div>
+                    <div class="flats__floor" data-floor="floor-1">
+
+                        <div class="flats__floor__flat" data-flat="flat-1">
+                            <img src="images/flat.jpg" alt="" class="flatImg">
+                            Квартира 1 на 1 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на первом этаже -->
+
+
+
+                    <div class="flats__floor" data-floor="floor-2">
+                        
+                        <div class="flats__floor__flat">
+                            <img src="" alt="">
+                            Квартира 1 на 2 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на втором этаже -->
+
+
+
+                    <div class="flats__floor" data-floor="floor-3">
+                        
+                        <div class="flats__floor__flat">
+                            <img src="" alt="">
+                            Квартира 1 на 3 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на третем этаже -->
+
+
+
+                    <div class="flats__floor" data-floor="floor-4">
+
+                        <div class="flats__floor__flat">
+                            <img src="" alt="">
+                            Квартира 1 на 4 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на четвертом этаже -->
+
+
+
+                    <div class="flats__floor" data-floor="floor-5">
+                        
+                        <div class="flats__floor__flat">
+                            <img src="" alt="">
+                            Квартира 1 на 5 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на пятом этаже -->
+
+
+
+                    <div class="flats__floor" data-floor="floor-6">
+                        
+                        <div class="flats__floor__flat">
+                            <img src="" alt="">
+                            Квартира 1 на 6 этаже
+                        </div><!-- квартира-->
+
+                    </div><!-- квартиры на шестом этаже -->
+
+                </div><!-- END FLATS -->
+
+            </div><!--end popupContainer -->
 
        </main><!-- end main -->
 
