@@ -59,10 +59,17 @@
 		border: 0;
 		display: block;
 		border-radius: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
 		&.phone {
 			background-color: #95c349;
 			margin-bottom: 60px;
+      background-image: url(../images/phone-call.svg);
 			-webkit-animation: pulse-green 1.25s infinite linear;
 			   -moz-animation: pulse-green 1.25s infinite linear;
 			    -ms-animation: pulse-green 1.25s infinite linear;
@@ -70,13 +77,27 @@
 		}
 		&.email {
 			background-color: #eec59c;
+      background-image: url(../images/envelope.svg);
 
 			-webkit-animation: pulse-rose 1.25s infinite linear;
 			   -moz-animation: pulse-rose 1.25s infinite linear;
 			    -ms-animation: pulse-rose 1.25s infinite linear;
 			  		animation: pulse-rose 1.25s infinite linear;
 		}
+
+    &:hover {
+      -webkit-animation: none;
+         -moz-animation: none;
+          -ms-animation: none;
+              animation: none;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
 	}
+
+
     @include m1000 { 
         right: 20px;
         button {
