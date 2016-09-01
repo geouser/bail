@@ -33,8 +33,11 @@
             margin-top: 40px;
             height: auto;
         }
-        @media (min-height: 800px) and (max-width: 1200px) {
+        @media (min-height: 660px) and (max-width: 1200px) {
             margin-top: 100px;
+        }
+        @media (min-height: 1000px) and (max-width: 1200px) {
+            margin-top: 200px;
         }
     }
 }
@@ -97,8 +100,11 @@
                     font-size: 16px;
                 }
             }
-            @media (min-height: 800px) and (max-width: 1200px) {
+            @media (min-height: 700px) and (max-width: 1200px) {
                 margin: 20px auto;
+            }
+            @media (min-height: 1000px) and (max-width: 1200px) {
+                margin: 35px auto;
             }
         }
     }
@@ -119,9 +125,9 @@
 
 .menu-button     {    
     display: none;
-    width: 50px;
-    height: 50px;
-    @include position(fixed, 15px, 7px, auto, auto);
+    width: 40px;
+    height: 40px;
+    @include position(fixed, 15px, 15px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
@@ -133,16 +139,16 @@
         display: block;
         @include position(absolute, auto, 0, auto, 0);
         width: 60%;
-        height: 5px;
+        height: 3px;
         background-color: #fff;
-        -webkit-border-radius: 1px;
-        border-radius: 1px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
         @include transition(all, .4s);
     }
 
     .top_line              {   top: 12px;  margin: auto;}
-    .middle_line           {   top: 22px;  margin: auto;}
-    .bottom_line           {   bottom: 12px; margin: auto;}
+    .middle_line           {   top: 19px;  margin: auto;}
+    .bottom_line           {   bottom: 11px; margin: auto;}
 
     &.active               {   -webkit-border-radius: 6px; border-radius: 6px;}
     &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
@@ -152,6 +158,9 @@
         /*.................media.............*/
         @include m1200 {
             display: block;
+        }
+        @include m400 {
+            right: 7px;
         }
         /*..............end media.............*/
 
