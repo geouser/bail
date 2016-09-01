@@ -125,6 +125,18 @@ jQuery(document).ready(function($) {
    
 
 
+   /*---------------------------
+                                  SIMPLE SLIDER
+    ---------------------------*/
+    $('.simple-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: false,
+        arrows: true
+    });
+
+
 
     /*----------------------------
                               SEND FORM

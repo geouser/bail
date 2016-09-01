@@ -81,6 +81,12 @@ main {
       -webkit-box-shadow: none;
       box-shadow: none;
     }
+    &.no-padding {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
      @include m1200 {
        padding: 20px 20px 80px;
      }
