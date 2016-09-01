@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
         $('.scroll-area').slimScroll({
             height: 'calc(100% - 55px)',
             railVisible: true,
-            alwaysVisible: true,
+            alwaysVisible: false,
             size: '1px',
             wheelStep: 150
         });    
