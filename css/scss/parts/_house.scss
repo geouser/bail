@@ -1,4 +1,4 @@
-.housePage {
+.housePage { // main 
     position: relative;
     height: 100%;
     padding: 0;
@@ -14,8 +14,9 @@
         background-color: #281f00;
         opacity: 0.6;
     }
-}
-.popupContainer {
+} 
+
+.popupContainer { // popupfor floors slider and flats 
     background-color: #FFF;
     overflow: hidden;
     width: 1600px;
@@ -33,9 +34,9 @@
         -ms-transform: scale(0);
          -o-transform: scale(0);
             transform: scale(0);
-    @include transition(transform, .4s);
     &.active {
         visibility: visible;
+       @include transition(transform, .6s);
         -webkit-transform: scale(1);
            -moz-transform: scale(1);
             -ms-transform: scale(1);
@@ -51,19 +52,18 @@
 }
 
 
-#house {
+#house { // house container
     position: relative;
     width: 100%;
     height: 100%;
-    padding-top: 400px;
     text-align: center;
-    img {
+    svg {
         position: absolute;
         min-width: 100%;
         min-height: 100%;
         left: 0;
         top: 0;
-        z-index: -1;
+        z-index: 1;
     }
     button {
         display: inline-block;
@@ -75,117 +75,9 @@
     }
 }
 
-#floors {
-    position: absolute;
-    left: -100%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    @include transition(all, .4s);
-    .slick-track,
-    .slick-list {
-        height: 100%;
-    }
-}
 
-.floors__floor {
-    text-align: center;
-    @include flex($justify: center, $direction: column);
-    &:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        height: 100%;
-    }
-    .floorImg {
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
-#flats {
-    position: absolute;
-    left: -100%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    @include transition(all, .4s);
-}
-
-.shown {
+.shown { // class to toggle  floors of flats container
     left: 0 !important;
-}
-
-
-.floors {
-    text-align: center;
-    .floors__title {
-        padding-top: 30px;
-        width: 100%;
-        height: 95px;
-        font: 20px $cir;
-        color: $yellow;
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-        border-bottom: 1px solid #eeeeee;
-        &:before {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 5px;
-            height: 5px;
-            background-color: $yellow;
-            margin-right: 14px;
-        }
-        &:after {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            width: 5px;
-            height: 5px;
-            background-color: $yellow;
-            margin-left: 14px;
-        }
-    }
-}
-
-.floorSlider {
-    height: calc(100% - 95px);
-    margin: 0;
-    .slick-next {
-        left: 165px;
-        width: 40px;
-        height: 40px;
-        top: 30%;
-        z-index: 10;
-        border-left: 2px solid #eee;
-        border-top: 2px solid #eee;
-        -webkit-transform: rotate(45deg);
-           -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-             -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-        &:before {
-            display: none;
-        }
-    }
-    .slick-prev {
-        left: 165px;
-        width: 40px;
-        height: 40px;
-        top: 52%;
-        border-left: 2px solid #eee;
-        border-bottom: 2px solid #eee;
-        -webkit-transform: rotate(-45deg);
-           -moz-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-             -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        &:before {
-            display: none;
-        }
-    }
 }
 
 
@@ -193,6 +85,7 @@
 .info__num {
     position: absolute;
     left: 130px;
+    z-index: 103;
     top: calc(50% - 55px);
     width: 110px;
     height: 110px;
@@ -254,33 +147,13 @@
 
 }
 
-.flats__floor {
-    width: 100%;
-    height: 100%;
-    float: left;
-    display: none;
-    text-align: center;
-    @include flex($justify: center, $direction: column);
-    &:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        height: 100%;
-    }
-    .flatImg {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    &.active {
-        display: block;
-    }
-    &__flat {
-         width: 100%;
-        height: 100%;
-        float: left;
-        display: none;
-        &.active {
-            display: block;
-        }
+
+polygon {
+    opacity: 0.0;
+    fill: $yellow;
+    @include transition(all, .2s);
+    cursor: pointer;
+    &:hover {
+        opacity: .6;
     }
 }

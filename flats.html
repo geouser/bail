@@ -34,9 +34,9 @@
                     <ul>
                         <li><a href="about.html">О Проекте</a></li>
                         <li><a href="location.html">Расположение</a></li>
-                        <li><a href="#">БаиловЪ</a></li>
-                        <li><a href="#" class="active">Выбор квартиры</a></li>
-                        <li><a href="#">Галерея</a></li>
+                        <li><a href="bayil.html">БаиловЪ</a></li>
+                        <li><a href="flats.html" class="active">Выбор квартиры</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav><!-- end nav -->
@@ -73,13 +73,30 @@
             <!--=================================================================================================-->
                                                     <!-- HOUSE -->
             <div id="house">
-                <img src="images/house.jpg" alt="">
-                <button class="floorPointer" data-floor="floor-1">этаж 1</button>
-                <button class="floorPointer" data-floor="floor-2">этаж 2</button>
-                <button class="floorPointer" data-floor="floor-3">этаж 3</button>
-                <button class="floorPointer" data-floor="floor-4">этаж 4</button>
-                <button class="floorPointer" data-floor="floor-5">этаж 5</button>
-                <button class="floorPointer" data-floor="floor-6">этаж 6</button>
+                <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="1920px" height="955px" viewBox="0 0 1920 955" enable-background="new 0 0 1920 955" xml:space="preserve">
+                    <image  overflow="visible" width="1920" height="955" xlink:href="images/house.jpg"></image>
+                    <polygon class="floorPointer" data-floor="floor-1"
+                        opacity="0.6" fill="#FFFFFF" points="259.667,691.334 503.667,691.334 1696.554,691.334 1696.554,714.5 503.667,722.667 
+                        259.667,717.334 "/>
+                    <polygon class="floorPointer" data-floor="floor-2"
+                        opacity="0.6" fill="#FFFFFF" points="261,653.001 505,644.334 1696.554,659.25 1696.554,690.5 504.25,690.5 
+                        259.667,691.334 "/>
+                    <polygon class="floorPointer" data-floor="floor-3"
+                        opacity="0.6" fill="#FFFFFF" points="262,614.333 505,598.667 1695.002,625.333 1695.002,659.23 505,644.334 262,651.667 
+                        "/>
+                    <polygon class="floorPointer" data-floor="floor-4"
+                        opacity="0.6" fill="#FFFFFF" points="262,575.667 505.669,549 1695.002,590.667 1695.002,624 505,598.667 262,613 "/>
+                    <polygon class="floorPointer" data-floor="floor-5"
+                        opacity="0.6" fill="#FFFFFF" points="262,536.333 506.667,501.333 1695.002,557.667 1695.002,590.667 505.669,549 
+                        262,575.667 "/>
+                    <polygon class="floorPointer" data-floor="floor-6"
+                        opacity="0.6" fill="#FFFFFF" points="262,499 508,453 1693,524 1693,557.572 506.667,501.333 262,534 "/>
+                    <polygon class="floorPointer" data-floor="floor-7"
+                        opacity="0.6" fill="#FFFFFF" points="262,466 507.667,408 1693,491.333 1693,524 508,453 262,499 "/>
+                    <polygon class="floorPointer" data-floor="floor-8"
+                        opacity="0.6" fill="#FFFFFF" points="266.333,429 509.333,355.333 1693,455.667 1693,491.333 507.667,408 262,466 "/>
+                </svg>
             </div><!-- END HOUSE -->
 
 
@@ -100,52 +117,58 @@
                     <p class="floors__title">Выбрать квартиру</p>
 
                     <div class="floorSlider">
+
                         <div class="floors__floor" id="floor-1">                  
-                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-1">
-                        </div>
+                            <svg class="flatPointer floorImg" version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="400px" height="550px" viewBox="0 0 400 550" enable-background="new 0 0 400 550" xml:space="preserve">
+                                <image  overflow="visible" width="400" height="550" xlink:href="images/floor-1.png"></image>
+                                <polygon   data-flat="flat-1"
+                                    points="0,272.308 66.56,275 66.56,280.484 174.107,280.484 174.107,537.717 101.78,537.717 
+                                101.151,531.428 71.591,530.17 70.333,534.572 0,533.943 "/>
+                                <polygon   data-flat="flat-2"
+                                    points="373.478,537.717 174.107,537.717 174.107,358.472 219.39,358.472 213.101,275 
+                                255.239,275 253.981,338.975 382.912,340.232 387.314,503.126 372.22,501.239 "/>
+                                <polygon   data-flat="flat-3"
+                                    points="387.314,167.276 382.912,340.232 256.49,338.999 255.239,275 213.101,275 
+                                216.874,167.276 53.981,167.276 53.981,16.333 308.698,16.333 309.956,23.251 372.22,21.993 372.22,52.182 387.314,53.44 "/>
+                            </svg>
+                        </div><!-- END FLOOR 1 -->
+
                         <div class="floors__floor" id="floor-2">
                             <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-2">
-                        </div>
+                        </div><!-- END FLOOR 2 -->
+
                         <div class="floors__floor" id="floor-3">
                             <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-3">
-                        </div>
+                        </div><!-- END FLOOR 3 -->
+
                         <div class="floors__floor" id="floor-4">
                             <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-4">
-                        </div>
+                        </div><!-- END FLOOR 4 -->
+
                         <div class="floors__floor" id="floor-5">
                             <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-5">
-                        </div>
+                        </div><!-- END FLOOR 5 -->
+
                         <div class="floors__floor" id="floor-6">
                             <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-6">
-                        </div>
-                    </div>
+                        </div><!-- END FLOOR 6 -->
+
+                        <div class="floors__floor" id="floor-7">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-6">
+                        </div><!-- END FLOOR 7 -->
+
+                        <div class="floors__floor" id="floor-8">
+                            <img src="images/floor-1.png" alt="" class="flatPointer floorImg" data-flat="flat-6">
+                        </div><!-- END FLOOR 8 -->
+
+                    </div><!-- ======================= END FLOORs slider =======================  -->
 
                     <div class="info__num info__num--order"><!-- текущий єтаж -->
                         <p class="info__num__num"> 
                             <i></i>
                             <span>этаж</span>
                         </p>
-                    </div>
-
-                    <div class="info__right"><!-- информация в числах справа -->
-                        <div class="info__num info__num--number">
-                            <p class="info__num__num"> 
-                                <i>33</i>
-                                <span>№ КВАРТИРЫ</span>
-                            </p>
-                        </div>
-                        <div class="info__num info__num--square">
-                            <p class="info__num__num"> 
-                                <i>4</i>
-                                <span>КОМНАТЫ</span>
-                            </p>
-                        </div>
-                        <div class="info__num info__num--flats">
-                            <p class="info__num__num"> 
-                                <i>128.5</i>
-                                <span>ПЛОЩАДЬ, М²</span>
-                            </p>
-                        </div>
                     </div>
 
                 </div><!-- END FLOORS -->
@@ -163,8 +186,24 @@
                     <div class="flats__floor" data-floor="floor-1">
 
                         <div class="flats__floor__flat" data-flat="flat-1">
-                            <img src="images/flat.jpg" alt="" class="flatImg">
-                            Квартира 1 на 1 этаже
+                            <span>
+                                <img src="images/flat.jpg" alt="" class="flatImg">
+                                <div>Квартира 1 на 1 этаже</div>
+                            </span>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-2">
+                            <span>
+                                <img src="images/flat.jpg" alt="" class="flatImg">
+                                <div>Квартира 2 на 1 этаже</div>
+                            </span>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-3">
+                            <span>
+                                <img src="images/flat.jpg" alt="" class="flatImg">
+                                <div>Квартира 3 на 1 этаже</div>
+                            </span>
                         </div><!-- квартира-->
 
                     </div><!-- квартиры на первом этаже -->
@@ -226,6 +265,28 @@
 
                 </div><!-- END FLATS -->
 
+
+
+                <div class="info__right"><!-- информация в числах справа -->
+                    <div class="info__num info__num--number">
+                        <p class="info__num__num"> 
+                            <i>33</i>
+                            <span>№ КВАРТИРЫ</span>
+                        </p>
+                    </div>
+                    <div class="info__num info__num--square">
+                        <p class="info__num__num"> 
+                            <i>4</i>
+                            <span>КОМНАТЫ</span>
+                        </p>
+                    </div>
+                    <div class="info__num info__num--flats">
+                        <p class="info__num__num"> 
+                            <i>128.5</i>
+                            <span>ПЛОЩАДЬ, М²</span>
+                        </p>
+                    </div>
+                </div>
             </div><!--end popupContainer -->
 
        </main><!-- end main -->

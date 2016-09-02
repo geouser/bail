@@ -10,7 +10,8 @@ jQuery(document).ready(function($) {
     });
     //----------------- init floor slider 
     $('.floorSlider').slick({
-        fade: true
+        fade: true,
+        speed: 600
     });
 
     var container   = $('.popupContainer'),
@@ -30,7 +31,7 @@ jQuery(document).ready(function($) {
 
 
     //----------------- click on floor img 
-    $('.flatPointer').click(function(){
+    $('.flatPointer polygon').click(function(){
         $('#floors').removeClass('shown');
         $('#flats').addClass('shown');
         $('.flats__floor').removeClass('active');

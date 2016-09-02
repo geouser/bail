@@ -1,0 +1,11 @@
+
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="400px" height="550px" viewBox="0 0 400 550" enable-background="new 0 0 400 550" xml:space="preserve">
+    <image display="none" overflow="visible" width="400" height="550" xlink:href="images/floor.png"></image>
+    <polygon opacity="0.6" fill="#FFFFFF" points="0,272.308 66.56,275 66.56,280.484 174.107,280.484 174.107,537.717 101.78,537.717 
+    101.151,531.428 71.591,530.17 70.333,534.572 0,533.943 "/>
+    <polygon opacity="0.6" fill="#FFFFFF" points="373.478,537.717 174.107,537.717 174.107,358.472 219.39,358.472 213.101,275 
+    255.239,275 253.981,338.975 382.912,340.232 387.314,503.126 372.22,501.239 "/>
+    <polygon opacity="0.6" fill="#FFFFFF" points="387.314,167.276 382.912,340.232 256.49,338.999 255.239,275 213.101,275 
+    216.874,167.276 53.981,167.276 53.981,16.333 308.698,16.333 309.956,23.251 372.22,21.993 372.22,52.182 387.314,53.44 "/>
+</svg>
