@@ -10,6 +10,11 @@
 	margin-bottom: 95px;
 	@extend %vertAlign;
 
+	@media (max-width: 1200px) {
+		padding-top: 0;
+		height: 200px;
+	}
+
 	h1 {
 		display: inline-block;
 		vertical-align: middle;
@@ -34,6 +39,17 @@
 	@include flex($wrap: wrap);
 	margin-bottom: 80px;
 
+	@media (max-width: 1200px) {
+		-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	    align-items: flex-start;
+	}
+
+	@media (max-width: 800px) {
+		display: block;
+		margin-bottom: 20px;
+	}
+
 	&__media,
 	&__content {
 		width: 50%;
@@ -42,6 +58,16 @@
 
 	&__media {
 		position: relative;
+
+		@media (max-width: 800px) {
+			width: 600px;
+			margin: 0 auto 25px;
+		}
+		@media (max-width: 640px) {
+			width: 100%;
+			margin: 0 auto 25px;
+			padding: 0;
+		}
 
 		&:after {
 			content: '';
@@ -53,6 +79,11 @@
 			bottom: 10px;
 			left: 20px;
 			z-index: 0;
+
+			@media (max-width: 640px) {
+				left: 10px;
+				right: 10px;
+			}
 		}
 
 		img {
@@ -66,6 +97,11 @@
 		font-size: 16px;
 		line-height: 24px;
 		color: #444;
+
+		@media (max-width: 800px) {
+			width: 100%;
+			padding-left: 0;
+		}
 
 		p:not(:last-child) {
 			margin-bottom: 22px;
@@ -81,6 +117,11 @@
 	&:nth-of-type(even) &__content {
 		padding-left: 0;
 		padding-right: 45px;
+
+		@media (max-width: 800px) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 }
@@ -96,6 +137,12 @@ $arrow-color: #686868;
 		background-color: #DDDDDD;
 		z-index: 10;
 		margin-top: -25px;
+
+		@media (max-width: 640px) {
+			width: 30px;
+			height: 30px;
+			margin-top: -15px;
+		}
 
 		&:before {
 			display: none;
@@ -149,6 +196,13 @@ $arrow-color: #686868;
     -webkit-column-gap: 90px; /* Chrome, Safari, Opera */
     -moz-column-gap: 90px; /* Firefox */
     column-gap: 90px;
+
+    @media (max-width: 800px) {
+    	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+	    column-count: 1;
+	    margin-bottom: 20px;
+    }
 
     margin-bottom: 80px;
 

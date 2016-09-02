@@ -147,10 +147,13 @@ jQuery(document).ready(function($) {
             type: 'image',
             tLoading: 'Загрузка изображения #%curr%...',
             mainClass: 'mfp-img-mobile',
+            fixedContentPos: false,
+            fixedBgPos: true,
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+                tCounter: '%curr% из %total%' // Markup for "1 of 7" counter
             },
             image: {
                 tError: '<a href="%url%">Изображение #%curr%</a> не загружено.',
