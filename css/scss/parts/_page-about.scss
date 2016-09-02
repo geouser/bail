@@ -93,6 +93,10 @@
 	max-height: 610px;
 	height: 100%;
 	padding: 25px 18px 25px 25px;
+	
+	@include m600 {
+		width: 100%;
+	}
 
 	.slimScrollDiv {
 		position: relative;
@@ -128,6 +132,10 @@
 		p {
 			margin-bottom: 25px;
 		}
+		@include m600 {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 
 	.slimScrollRail {
@@ -140,5 +148,12 @@
 		height: 13px!important;
 		border-radius: 50% 50%!important;
 		background-color: #CCCCCC!important;
+	}
+
+	@include m600 {
+		.content-scroll p {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 }

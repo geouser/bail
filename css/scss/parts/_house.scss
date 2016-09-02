@@ -112,8 +112,11 @@
         @include m700 {
             left: -25%;
         }
-         @include m600 {
+        @include m600 {
             left: -30%;
+        }
+        @media (max-width: 800px ) and (max-height: 500px) {
+            left: 0;
         }
     }
     button {

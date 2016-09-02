@@ -251,6 +251,8 @@ jQuery(document).ready(function($) {
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
+
+
         map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
         var markerImage = new google.maps.MarkerImage('images/location.png');
         var marker = new google.maps.Marker({
@@ -324,7 +326,14 @@ jQuery(document).ready(function($) {
             mapTypeId: google.maps.MapTypeId.SATELLITE,
         };
 
+
         map = new google.maps.Map(document.getElementById('location_map'), mapOptions);
+        if (screen.width < 700) {
+            map.panBy(0, -350);
+        }
+        if (screen.width < 600) {
+            map.panBy(70, -60);
+        }
         var markerImage = new google.maps.MarkerImage('images/location.png');
         var marker = new google.maps.Marker({
             icon: markerImage,
