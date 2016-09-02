@@ -291,6 +291,12 @@
   }
 }
 
+@mixin m1100 {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
 @mixin m1200 {
   @media (max-width: 1200px) {
     @content;
@@ -333,6 +339,11 @@
 
 @mixin mh750 {
   @media (max-height: 750px) {
+    @content;
+  }
+}
+@mixin mh650 {
+  @media (max-height: 650px) {
     @content;
   }
 }

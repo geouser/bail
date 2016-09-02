@@ -1,6 +1,6 @@
 #floors { // floors container
     position: absolute;
-    left: -100%;
+    right: 0%;
     top: 0;
     height: 100%;
     width: 100%;
@@ -14,11 +14,15 @@
 .floorSlider { // floors slider configuration
     height: calc(100% - 95px);
     margin: 0;
+    @include m700 {
+        height: calc(100% - 250px);
+    }
     .slick-next {
         left: 165px;
         width: 40px;
         height: 40px;
         top: 30%;
+        z-index: 110;
         border-left: 2px solid #eee;
         border-top: 2px solid #eee;
         -webkit-transform: rotate(45deg);
@@ -29,13 +33,29 @@
         &:before {
             display: none;
         }
+        @include mh750 {
+           top: 25%;
+        }
+        @include m1100 {
+             left: 58px;
+        }
+        @include m700 {
+            right: 40px;
+            top: -50px;
+            left: auto;
+        -webkit-transform: rotate(-225deg);
+           -moz-transform: rotate(-225deg);
+            -ms-transform: rotate(-225deg);
+             -o-transform: rotate(-225deg);
+                transform: rotate(-225deg);
+        }
     }
     .slick-prev {
         left: 165px;
         width: 40px;
         height: 40px;
         top: 52%;
-        z-index: 10;
+        z-index: 110;
         border-left: 2px solid #eee;
         border-bottom: 2px solid #eee;
         -webkit-transform: rotate(-45deg);
@@ -45,6 +65,18 @@
                 transform: rotate(-45deg);
         &:before {
             display: none;
+        }
+        @include m1100 {
+            left: 58px;
+        }
+        @include m700 {
+            left: 40px;
+            top: -50px;
+            -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
         }
     }
 }
@@ -81,6 +113,11 @@
             background-color: $yellow;
             margin-left: 14px;
         }
+         @include m700 {
+             height: 45px;
+             padding-top: 0;
+             line-height: 45px;
+         }
     }
     &__floor {
         text-align: center;
@@ -94,6 +131,17 @@
         .floorImg {
             display: inline-block;
             vertical-align: middle;
+            @include mh750 {
+                max-height: 460px;
+            }
+            @include m1100 {
+                max-width: 50%;
+                height: auto !important;
+                max-height: 100%;
+            }
+            @include m700 {
+                max-width: 60%;            
+            }
         }
     }
 }
