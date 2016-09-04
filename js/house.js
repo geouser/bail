@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 
 
     //----------------- click on floor 
-    $('.flatPointer polygon').click(function(){
+    $('.flatPointer g').click(function(){
         $('#floors').removeClass('shown');
         $('#flats').addClass('shown');
         $('.flats__floor').removeClass('active');
@@ -77,7 +77,7 @@ jQuery(document).ready(function($) {
         $('.info__num--doc').attr('href', doc);
     }
     
-    $('.floors__floor polygon').hover(
+    $('.floors__floor g').hover(
         function() {
             showInfo($(this));
         },

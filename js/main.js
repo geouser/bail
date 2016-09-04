@@ -107,7 +107,16 @@ jQuery(document).ready(function($) {
         fade: true,
         arrows: false,
         cssEase: 'linear',
-        adaptiveHeight: false
+        adaptiveHeight: false,
+        responsive: [
+          {
+            breakpoint: 640,
+            settings: {
+                autoplay: true,
+                arrows: false
+            }
+          }
+        ]
     });
 
     $(window).on('load resize', function(event) {

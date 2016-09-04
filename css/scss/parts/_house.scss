@@ -270,8 +270,25 @@ polygon {
     &:hover {
         opacity: .6;
     }
-    &:after {
-        content: '';
-        display: block;
+}
+g {
+    polygon {
+        opacity: 0;
+        @include transition(all, .2s);
+        fill: $yellow;
+    }
+    image {
+        opacity: 0;
+        @include transition(all, .2s);
+    }
+    @include transition(all, .2s);
+    cursor: pointer;
+    &:hover {
+        polygon {
+            opacity: .6;
+        }
+        image {
+            opacity: 1;
+        }
     }
 }

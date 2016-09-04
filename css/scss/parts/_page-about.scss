@@ -157,3 +157,10 @@
 		}
 	}
 }
+
+
+@media (max-width: 640px) {
+	.slider-controls button{
+		display: none !important;
+	}
+}
