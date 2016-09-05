@@ -67,8 +67,6 @@ jQuery(document).ready(function($) {
         mainClass: 'my-mfp-slide-bottom'
     });
 
-
-
     /*---------------------------
                                   MAIN PAGE SLIDER
     ---------------------------*/
@@ -413,5 +411,17 @@ jQuery(document).ready(function($) {
     if ( $('#location_map').length > 0) {
         locationMap_initialize();   
     }
+
+
+    /*---------------------------
+                                LOCATION GOOGLE MAP
+    ---------------------------*/
+    $('.flats__floor__flat__image').each(function(index, el) {
+        $(this).zoom({
+            url: $(this).find('.flatImg').data('zoom-image'), 
+        });
+    });
+
+
 
 }); // end file

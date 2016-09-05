@@ -9,6 +9,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	text-transform: uppercase;
+	border: 0;
 
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -41,6 +42,16 @@
 			background-color: #E59C0B;
 		}
 	}
+
+	&--green {
+		background-color: #95C83D;
+
+		&:hover {
+			background-color: #82AF36;
+		}
+	}
+
+
 	@include m700 {
 		height: 40px;
 		padding: 0 20px;

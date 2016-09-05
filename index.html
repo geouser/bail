@@ -97,8 +97,8 @@
 
 
        <div class="control-buttons">
-           <button class="phone pulse"></button>
-           <button class="email pulse"></button>
+           <button href="#modal-popup-callback" class="phone pulse magnific"></button>
+           <button href="#modal-popup-feedback" class="email pulse magnific"></button>
        </div>
 
 
@@ -113,7 +113,34 @@
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup-callback" class="mfp-hide zoom-anim-dialog popup">
+            <div class="popup__heading">
+                <p class="title title--green">Заказать звонок</p>
+            </div>
+            <div class="popup__body">
+                <p class="desc">Мы готовы перезвонить Вам <br><span>в течении 80 секунд</span></p>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="text" name="phone" placeholder="Контактный телефон" required>
+                    <button class="button button--green">ЖДУ ЗВОНКА!</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-popup-feedback" class="mfp-hide zoom-anim-dialog popup">
+            <div class="popup__heading">
+                <p class="title title--green">Оставить сообщение</p>
+            </div>
+            <div class="popup__body">
+                <p class="desc">Мы готовы ответить Вам <br><span>в течении 80 секунд</span></p>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="text" name="email" placeholder="Контактный телефон" required>
+                    <textarea name="masg" placeholder="Ваше сообщение" required></textarea>
+                    <button class="button button--green">ЖДУ ОТВЕТА!</button>
+                </form>
+            </div>
+        </div>
 
         <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Ваша заявка принята =)</p>

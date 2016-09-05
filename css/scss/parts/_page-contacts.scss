@@ -121,6 +121,15 @@
 		vertical-align: middle;
 		margin: 0 5px;
 	}
+
+	&--green {
+		color: #95C83D;
+
+		&:before,
+		&:after {
+			background-color: #95C83D;
+		}
+	}
 }
 
 .zoom-controls {
