@@ -349,12 +349,13 @@ jQuery(document).ready(function($) {
             title:"Park Bayil"
         });
 
-        var clinic = new google.maps.Marker({
-            icon: new google.maps.MarkerImage('images/clinic.png'),
-            position: new google.maps.LatLng(40.346331521350116, 49.83702063560486), 
-            map: map,
-            title:"Поликлиника"
-        });
+        for( i = 0; i < places.length; i++ ) {
+            new google.maps.Marker({
+                icon: new google.maps.MarkerImage( places[i].pin ),
+                position: new google.maps.LatLng( places[i].lat, places[i].lng ), 
+                map: map
+            })
+        }
 
         map.addListener('click', function(e) {
             console.log('{lat: '+e.latLng.lat()+', lng: '+e.latLng.lng()+'},');
