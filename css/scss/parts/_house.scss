@@ -166,7 +166,19 @@
     right: 0 !important;
 }
 
+.compas {
+    position: absolute;
+    bottom: 30px;
+    left: 130px;
 
+    @media (max-width: 1500px) {
+        left: 30px;
+    }
+
+    @media (max-width: 700px) {
+        display: none;
+    }
+}
 
 .info__num {
     position: absolute;
@@ -180,6 +192,9 @@
     z-index: 120;
     -webkit-border-radius: 50%;
             border-radius: 50%;
+    @media (max-width: 1500px) {
+        left: 30px;
+    }
     @include m1100 {
         left: 20px;
     }
@@ -263,6 +278,10 @@
     width: 115px;
     text-align: center;
     @include flex($direction: column);
+
+    @media (max-width: 1500px) {
+        right: 30px;
+    }
     .info__num {
         position: static;
         display: inline-block;

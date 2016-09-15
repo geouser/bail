@@ -17,6 +17,9 @@
     @include m700 {
         height: calc(100% - 250px);
     }
+    .slick-arrow.slick-disabled {
+        opacity: 0;
+    }
     .slick-next {
         left: 165px;
         width: 40px;
@@ -35,6 +38,9 @@
         }
         @include mh750 {
            top: 25%;
+        }
+        @media (max-width: 1500px) {
+            left: 68px;
         }
         @include m1100 {
              left: 58px;
@@ -65,6 +71,9 @@
                 transform: rotate(-45deg);
         &:before {
             display: none;
+        }
+        @media (max-width: 1500px) {
+            left: 68px;
         }
         @include m1100 {
             left: 58px;
@@ -140,7 +149,8 @@
                 max-height: 100%;
             }
             @include m700 {
-                max-width: 60%;            
+                max-width: 100%; 
+                width: 85%;         
             }
         }
     }

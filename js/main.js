@@ -315,12 +315,14 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                 LOCATION GOOGLE MAP
     ---------------------------*/
+
+    var pins = [];
     var map;
     function locationMap_initialize() {
-        var lat = 40.34503137704171;
-        var long = 49.838739931583405;
+        var lat = 40.344491687138365;
+        var long = 49.83895182609558;
 
-        var mapCenterCoord = new google.maps.LatLng(lat, long-0.002);
+        var mapCenterCoord = new google.maps.LatLng(lat+0.0005, long-0.002);
         var mapMarkerCoord = new google.maps.LatLng(lat, long);
 
 
@@ -350,23 +352,39 @@ jQuery(document).ready(function($) {
         });
 
         for( i = 0; i < places.length; i++ ) {
-            new google.maps.Marker({
-                icon: new google.maps.MarkerImage( places[i].pin ),
-                position: new google.maps.LatLng( places[i].lat, places[i].lng ), 
+            var place = places[i];
+            var m = new google.maps.Marker({
+                icon: new google.maps.MarkerImage( place.pin ),
+                position: new google.maps.LatLng( place.lat, place.lng ),
                 map: map
             })
+            pins.push(m)
         }
 
         map.addListener('click', function(e) {
             console.log('{lat: '+e.latLng.lat()+', lng: '+e.latLng.lng()+'},');
         });
 
+        map.addListener('zoom_changed', function(){
+            console.log(map.getZoom());
+
+            if ( 16 > map.getZoom() ) {
+                for (var i = 0; i < pins.length; i++) {
+                    pins[i].setMap(null);
+                }
+            } else {
+                for (var i = 0; i < pins.length; i++) {
+                    pins[i].setMap(map);
+                }
+            }
+
+        })
+
         var polygon = [
-            {lat: 40.345348238420115, lng: 49.83832150697708},
-            {lat: 40.34544431867299, lng: 49.83879894018173},
-            {lat: 40.34502319995417, lng: 49.83902156352997},
-            {lat: 40.34487805648554, lng: 49.83853340148926},
-            {lat: 40.345348238420115, lng: 49.83832150697708}
+            {lat: 40.344743134107844, lng: 49.83911544084549},
+            {lat: 40.34435676398785, lng: 49.83930319547653},
+            {lat: 40.344221840567435, lng: 49.83890622854233},
+            {lat: 40.34462865430301, lng: 49.83870506286621}
         ];
 
         // Construct the polygon.

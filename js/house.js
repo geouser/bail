@@ -30,7 +30,8 @@ jQuery(document).ready(function($) {
     //----------------- init floor slider 
     floorSlider.slick({
         fade: true,
-        speed: 600
+        speed: 600,
+        infinite: false
     });
 
 
