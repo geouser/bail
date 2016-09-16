@@ -37,12 +37,12 @@
             /*@include m1100 {
                 max-width: 50%;
             }*/
-            /*@include m700 {
+            @include m700 {
                 max-width: 60%;
             }
             @include mh750 {
                 max-height: 460px;
-            }*/
+            }
         }
         &__info {
             display: none;

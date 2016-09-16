@@ -185,7 +185,6 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    z-index: 120;
     @media (max-width: 700px) {
         top: 150px;
     }
@@ -198,7 +197,6 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 10px;
-    z-index: 120;
     @media (max-width: 700px) {
         bottom: 115px;
     }
