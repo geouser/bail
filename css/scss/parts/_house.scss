@@ -167,6 +167,7 @@
     position: absolute;
     bottom: 30px;
     left: 130px;
+    z-index: 120;
 
     @media (max-width: 1500px) {
         left: 30px;
@@ -259,6 +260,7 @@
     }
     &--doc {
         background-color: #d94d45;
+        display: none!important;
         &:before {
             content: "";
             display: inline-block;
@@ -270,9 +272,9 @@
             vertical-align: middle;
         }
     }
-    &.hide {
+    /*&.hide {
         display: none !important;
-    }
+    }*/
     @include m700 {
         width: 75px;
         height: 75px;
@@ -341,6 +343,12 @@ polygon {
     cursor: pointer;
     &:hover {
         opacity: .6;
+    }
+
+    @media (max-width: 700px) {
+        opacity: 0.4;
+        stroke-width: 3;
+        stroke: #fff;
     }
 }
 g {
