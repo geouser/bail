@@ -27,12 +27,16 @@
             vertical-align: middle;
             height: 100%;
         }
+        &__image {
+            max-width: 95%;
+        }
         .flatImg {
-            display: inline-block;vertical-align: middle;
+            display: inline-block;
+            vertical-align: middle;
             max-width: 98%;
-            @include m1100 {
+            /*@include m1100 {
                 max-width: 50%;
-            }
+            }*/
             @include m700 {
                 max-width: 60%;
             }

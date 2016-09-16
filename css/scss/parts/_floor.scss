@@ -9,13 +9,18 @@
     .slick-list {
         height: 100%;
     }
+    @media (max-width: 700px) {
+        position: static;
+    }
 }
 
 .floorSlider { // floors slider configuration
     height: calc(100% - 95px);
     margin: 0;
+    padding: 70px 0;
     @include m700 {
-        height: calc(100% - 250px);
+        height: auto;
+        padding: 70px 0 150px;
     }
     .slick-arrow.slick-disabled {
         opacity: 0;
@@ -140,6 +145,7 @@
         .floorImg {
             display: inline-block;
             vertical-align: middle;
+            height: 100%;
             @include mh750 {
                 max-height: 460px;
             }

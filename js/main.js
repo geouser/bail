@@ -433,7 +433,7 @@ jQuery(document).ready(function($) {
 
 
     /*---------------------------
-                                LOCATION GOOGLE MAP
+                                ZOOM
     ---------------------------*/
     $('.flats__floor__flat__image').each(function(index, el) {
         $(this).zoom({
