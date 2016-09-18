@@ -57,6 +57,7 @@ jQuery(document).ready(function($) {
         $('.flats__floor').removeClass('active');
         $('.flats__floor__flat').removeClass('active');
         $('.info__num--number span').text('Блок');
+        console.log('csdcsdc');
 
         var onFloor = $(this).parent('').attr('id'),
             flat   = $(this).attr('data-flat');
@@ -88,14 +89,15 @@ jQuery(document).ready(function($) {
 
     //----------------- display flat info on hover
     var showInfo = function(el) {
-        var onFloor = el.parent('').attr('id'),
+        var onFloor = el.parent().parent().attr('id'),
+            floorSelector = '.flats__floor[data-floor="' + onFloor + '"]';
             flat   = el.attr('data-flat'),
-            square = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__square').text(),
-            number = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__num').text(),
-            rooms = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__rooms').text();
-            block = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block').text();
-            doc = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__doc').text();
-        
+            square = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__square').text(),
+            number = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__num').text(),
+            rooms = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__rooms').text();
+            block = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block').text();
+            doc = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__doc').text();
+console.log($(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block'));
         $('.info__num--number i:not(.block)').text(number);
         $('.info__num--number i.block').text(block);
         $('.info__num--square i').text(square);
