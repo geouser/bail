@@ -85,27 +85,27 @@
 
                 <svg version="1.1" id="house_map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 955" enable-background="new 0 0 1920 955" xml:space="preserve">
                 <image overflow="visible" width="100%" height="100%" xlink:href="images/house.jpg" ></image>
-                <polygon class="floorPointer" data-floor="floor-2" data-avail="6" 
+                <!--<polygon class="floorPointer" data-floor="floor-2" data-avail="6" 
                     fill="#F4A827"  points="705.5,809.831 735.25,808.75 735.25,805 
                     866.667,797.333 871.333,798.333 1013.75,790 1013.833,785.667 1193.021,774.896 1198,778.334 1274.75,775.75 1288.047,774.348 
                     1479.354,799.637 1483.688,850.971 1280.167,833.334 1244,826.375 995.688,835.688 995.563,829.625 1010,830 1010,827.5 984,826 
-                    867,830.834 867,842.001 703.744,848.838 "/>
-                <polygon class="floorPointer" data-floor="floor-3" data-avail="8" 
+                    867,830.834 867,842.001 703.744,848.838 "/> -->
+                <!--<polygon class="floorPointer" data-floor="floor-3" data-avail="8" 
                     fill="#F4A827"  points="707.99,754.516 736.667,752.082 
                     867.5,740.334 873.166,742.334 1012.666,728.834 1190.5,712.25 1194.5,715.75 1254.75,711.5 1270,714.25 1284.5,712 
                     1347.75,723.729 1347.75,727.75 1358,729.75 1475.105,749.328 1479.354,799.637 1288.047,774.348 1274.75,775.75 1198,778.334 
-                    1193.021,774.896 1013.833,785.667 1013.75,790 871.618,798.316 866.667,797.333 735.25,805 735.25,808.75 705.5,809.831 "/>
-                <polygon class="floorPointer" data-floor="floor-4" data-avail="4" 
+                    1193.021,774.896 1013.833,785.667 1013.75,790 871.618,798.316 866.667,797.333 735.25,805 735.25,808.75 705.5,809.831 "/>  -->
+                <!--<polygon class="floorPointer" data-floor="floor-4" data-avail="4" 
                     fill="#F4A827"  points="709.758,715.25 738.25,712.5 867.25,696.5 
                     873.25,696.5 1012,679.25 1184.5,656.75 1192.75,656.75 1251.334,651.25 1267.75,655 1281.875,652.313 1343.75,666.75 
                     1343.75,672.375 1416.834,692.167 1423.667,691.667 1471.13,702.249 1475.105,749.328 1358,729.75 1347.75,727.75 1347.75,723.729 
-                    1284.5,712 1270,714.25 1254.75,711.5 1194.5,715.75 1190.5,712.25 873.166,742.334 867.5,740.334 707.99,754.516 "/>
-                <polygon class="floorPointer" data-floor="floor-5" data-avail="6" 
+                    1284.5,712 1270,714.25 1254.75,711.5 1194.5,715.75 1190.5,712.25 873.166,742.334 867.5,740.334 707.99,754.516 "/>  -->
+                <!--<polygon class="floorPointer" data-floor="floor-5" data-avail="6" 
                     fill="#F4A827"  points="711.795,669.992 739.333,665.001 
                     867,646.334 873.333,646.334 1011.666,625.334 1185.331,599.998 1190.665,599.998 1248.665,591.331 1264.331,595.998 
                     1278.914,592.992 1340.331,611.665 1340.493,617.373 1347.998,619.331 1352.331,619.331 1412.998,637.998 1419.331,637.998 
                     1466.823,651.25 1471.13,702.249 1423.667,691.667 1416.834,692.167 1343.75,672.375 1343.75,666.75 1281.875,652.313 1267.75,655 
-                    1251.334,651.25 1192.75,656.75 1184.5,656.75 1012,679.25 873.948,696.413 867.25,696.5 738.25,712.5 709.758,715.25 "/>
+                    1251.334,651.25 1192.75,656.75 1184.5,656.75 1012,679.25 873.948,696.413 867.25,696.5 738.25,712.5 709.758,715.25 "/>  -->
                 <polygon class="floorPointer" data-floor="floor-6" data-avail="2" 
                     fill="#F4A827"  points="713.81,625.253 741.75,619.25 870,596.75 
                     874.5,596.75 1011,572.25 1184,543.25 1188.25,543.25 1246,533.25 1262,538.5 1275.993,534.987 1336.833,554.833 1337.083,563.709 
@@ -557,16 +557,466 @@
 
 
 
-                    <div class="flats__floor" data-floor="floor-6">
+                    <div class="flats__floor" data-floor="floor-6"><!-- квартиры на 6 этаже -->
                         
-                        <div class="flats__floor__flat">
-                            <img src="" alt="">
-                            Квартира 1 на 6 этаже
+                        <div class="flats__floor__flat" data-flat="flat-1">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/1.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">1</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">A</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
                         </div><!-- квартира-->
 
-                    </div><!-- квартиры на шестом этаже -->
+                        <div class="flats__floor__flat" data-flat="flat-2">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/2.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">2</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">B</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
 
+                        <div class="flats__floor__flat" data-flat="flat-3">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">3</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">C</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
 
+                        <div class="flats__floor__flat" data-flat="flat-4">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/4.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">4</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">D</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-5">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/5.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">5</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-6">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">6</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-7">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/7.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">7</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-8">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/8.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">8</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+                    </div><!-- квартиры на 6 этаже -->
+
+                    <div class="flats__floor" data-floor="floor-7"><!-- квартиры на 7 этаже -->
+                        
+                        <div class="flats__floor__flat" data-flat="flat-1">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/1.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">1</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">A</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-2">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/2.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">2</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">B</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-3">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">3</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">C</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-4">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/4.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">4</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">D</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-5">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/5.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">5</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-6">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">6</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-7">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/7.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">7</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-8">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/8.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">8</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+                    </div><!-- квартиры на 7 этаже -->
+
+                    <div class="flats__floor" data-floor="floor-8"><!-- квартиры на 8 этаже -->
+                        
+                        <div class="flats__floor__flat" data-flat="flat-1">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/1.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">1</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">A</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-2">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/2.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">2</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">B</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-3">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">3</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">C</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-4">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/4.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">4</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">D</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-5">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/5.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">5</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-6">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">6</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-7">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/7.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">7</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-8">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/8.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">8</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+                    </div><!-- квартиры на 8 этаже -->
+
+                    <div class="flats__floor" data-floor="floor-9"><!-- квартиры на 9 этаже -->
+                        
+                        <div class="flats__floor__flat" data-flat="flat-1">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/1.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">1</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">A</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-2">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/2.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">2</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">B</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-3">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">3</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">C</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-4">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/4.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">4</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">D</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-5">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/5.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">5</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-6">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/6.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">6</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-7">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/7.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">7</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+
+                        <div class="flats__floor__flat" data-flat="flat-8">
+                            <a href="doc_2.pdf" class="pdf-link"><i class="pdf-icon"></i> <span>Скачать PDF</span></a>
+                            <div class="flats__floor__flat__image">
+                                <img src="images/flats/6/8.jpg" data-zoom-image="images/flat_zoom.jpg" alt="" class="flatImg" id="zoom">
+                            </div>
+                            <div class="flats__floor__flat__info">                
+                                <span class="flats__floor__flat__info__num">8</span>
+                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__block">E</span>
+                                <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
+                            </div>
+                        </div><!-- квартира-->
+                    </div><!-- квартиры на 9 этаже -->
+        
                     <div class="flats__floor" data-floor="floor-10"><!-- квартиры на 10 этаже -->
                         
                         <div class="flats__floor__flat" data-flat="flat-1">
@@ -590,8 +1040,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">2</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">5</span>
+                                <span class="flats__floor__flat__info__square">155</span>
                                 <span class="flats__floor__flat__info__block">B</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -604,7 +1054,7 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">3</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
+                                <span class="flats__floor__flat__info__rooms">3</span>
                                 <span class="flats__floor__flat__info__square">125.5</span>
                                 <span class="flats__floor__flat__info__block">C</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
@@ -618,8 +1068,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">4</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">2</span>
+                                <span class="flats__floor__flat__info__square">45</span>
                                 <span class="flats__floor__flat__info__block">D</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -633,7 +1083,7 @@
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">5</span>
                                 <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__square">120</span>
                                 <span class="flats__floor__flat__info__block">E</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -647,7 +1097,7 @@
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">6</span>
                                 <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__square">145.5</span>
                                 <span class="flats__floor__flat__info__block">E</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -677,8 +1127,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">2</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">3</span>
+                                <span class="flats__floor__flat__info__square">120</span>
                                 <span class="flats__floor__flat__info__block">B</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -692,7 +1142,7 @@
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">3</span>
                                 <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__square">140.5</span>
                                 <span class="flats__floor__flat__info__block">C</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -705,8 +1155,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">4</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">5</span>
+                                <span class="flats__floor__flat__info__square">145</span>
                                 <span class="flats__floor__flat__info__block">D</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -719,8 +1169,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">5</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">2</span>
+                                <span class="flats__floor__flat__info__square">68</span>
                                 <span class="flats__floor__flat__info__block">E</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -765,7 +1215,7 @@
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">2</span>
                                 <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__square">130</span>
                                 <span class="flats__floor__flat__info__block">B</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -778,8 +1228,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">3</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">2</span>
+                                <span class="flats__floor__flat__info__square">65</span>
                                 <span class="flats__floor__flat__info__block">C</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -792,8 +1242,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">4</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">3</span>
+                                <span class="flats__floor__flat__info__square">110</span>
                                 <span class="flats__floor__flat__info__block">D</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>
@@ -820,8 +1270,8 @@
                             </div>
                             <div class="flats__floor__flat__info">                
                                 <span class="flats__floor__flat__info__num">6</span>
-                                <span class="flats__floor__flat__info__rooms">4</span>
-                                <span class="flats__floor__flat__info__square">125.5</span>
+                                <span class="flats__floor__flat__info__rooms">3</span>
+                                <span class="flats__floor__flat__info__square">128</span>
                                 <span class="flats__floor__flat__info__block">E</span>
                                 <span class="flats__floor__flat__info__doc">doc_1.pdf</span>
                             </div>

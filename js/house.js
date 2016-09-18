@@ -83,7 +83,8 @@ jQuery(document).ready(function($) {
             showFloorInfo($(this));
         },
         function() {
-            showFloorInfo($(this));
+            $('.availabeFlats i').text('');
+        $('.currentFloor i').text('');
         }
     )
 
