@@ -57,10 +57,10 @@ jQuery(document).ready(function($) {
         $('.flats__floor').removeClass('active');
         $('.flats__floor__flat').removeClass('active');
         $('.info__num--number span').text('Блок');
-        console.log('csdcsdc');
 
-        var onFloor = $(this).parent('').attr('id'),
+        var onFloor = $(this).parent('').parent('').attr('id'),
             flat   = $(this).attr('data-flat');
+
        
        $('.flats__floor[data-floor="' + onFloor + '"]').addClass('active');
        $('.flats__floor__flat[data-flat="' + flat + '"]').addClass('active');
