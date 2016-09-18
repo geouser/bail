@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
             rooms = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__rooms').text();
             block = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block').text();
             doc = $(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__doc').text();
-console.log($(floorSelector + ' .flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block'));
+            
         $('.info__num--number i:not(.block)').text(number);
         $('.info__num--number i.block').text(block);
         $('.info__num--square i').text(square);
