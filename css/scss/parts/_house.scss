@@ -19,7 +19,7 @@
 .popupContainer { // popupfor floors slider and flats 
     background-color: #FFF;
     width: 1600px;
-    height: 720px;
+    height: 820px;
     position: absolute;
     z-index: 110;
     left: 0;
@@ -36,8 +36,14 @@
     @include m1100 {
         height: 700px;
     }
+    @media (max-height: 850px) {
+        height: 750px;
+    }
     @include mh750 {
-        height: 600px;
+        height: 700px;
+    }
+    @media (max-height: 700px) {
+        height: 650px;
     }
     @include mh650 {
        height: 100%;
@@ -203,6 +209,69 @@
     }
 }
 
+.availabeFlats {
+    position: absolute;
+    left: 31%;
+    top: 53%;
+    width: 110px;
+    height: 110px;
+    background-color: #95c83d;
+    z-index: 2;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+     &:after {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        content: "";
+    }
+    &__num {
+        color: #FFF;
+        display: inline-block;
+        vertical-align: middle;
+        font: 12px $or;
+        i {
+            font-size: 30px;
+            display: block;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            min-height: 38px;
+        }
+    }
+}
+.currentFloor {
+    position: absolute;
+    left: 34%;
+    top: 62%;
+    width: 70px;
+    height: 70px;
+    background-color: #00b5b5;
+    z-index: 2;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+     &:after {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        content: "";
+    }
+    &__num {
+        color: #FFF;
+        display: inline-block;
+        vertical-align: middle;
+        font: 12px $or;
+        i {
+            font-size: 30px;
+            display: block;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            min-height: 38px;
+        }
+    }
+}
+
 .info__num {
     position: absolute;
     left: 130px;
@@ -234,6 +303,7 @@
         display: inline-block;
         vertical-align: middle;
         font: 12px $or;
+        text-transform: uppercase;
         i {
             font-size: 30px;
             display: block;
@@ -241,6 +311,9 @@
             font-style: normal;
             font-weight: normal;
             min-height: 38px;
+            &.block {
+                display: none;
+            }
         }
     }
     &--order {

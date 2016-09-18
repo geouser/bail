@@ -23,6 +23,8 @@ jQuery(document).ready(function($) {
     floorSlider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){ 
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('.info__num--order i').text(i);
+        $('.info__num--number span').text('№ квартиры');
+        $('#floors').addClass('shown');
         $('#flats').removeClass('shown');// if current popup is Flat hide it and show slider
         clearInfo();
         showHidePdf('hide');
@@ -38,6 +40,7 @@ jQuery(document).ready(function($) {
     //----------------- click on house 
     $('.floorPointer').click(function(){
         container.addClass('active');
+        $('#floors').addClass('shown');
         $('.housePage').addClass('overlay');
         var floorTarget   = $(this).attr('data-floor'),
             floor         = $('#' + floorTarget + ''),
@@ -53,6 +56,7 @@ jQuery(document).ready(function($) {
         $('#flats').addClass('shown');
         $('.flats__floor').removeClass('active');
         $('.flats__floor__flat').removeClass('active');
+        $('.info__num--number span').text('Блок');
 
         var onFloor = $(this).parent('').attr('id'),
             flat   = $(this).attr('data-flat');
@@ -63,6 +67,25 @@ jQuery(document).ready(function($) {
 
     });
 
+    //----------------- display floor info on house hover
+    var showFloorInfo = function(el) {
+        var floor = el.data('floor'),
+            availabeFlats   = el.data('avail'),
+            floorNum = floor.substring(6);
+        
+        $('.availabeFlats i').text(availabeFlats);
+        $('.currentFloor i').text(floorNum);
+    }
+
+    $('#house_map polygon').hover(
+        function() {
+            showFloorInfo($(this));
+        },
+        function() {
+            showFloorInfo($(this));
+        }
+    )
+
     //----------------- display flat info on hover
     var showInfo = function(el) {
         var onFloor = el.parent('').attr('id'),
@@ -70,9 +93,11 @@ jQuery(document).ready(function($) {
             square = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__square').text(),
             number = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__num').text(),
             rooms = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__rooms').text();
+            block = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__block').text();
             doc = $('.flats__floor__flat[data-flat="' + flat + '"] .flats__floor__flat__info__doc').text();
         
-        $('.info__num--number i').text(number);
+        $('.info__num--number i:not(.block)').text(number);
+        $('.info__num--number i.block').text(block);
         $('.info__num--square i').text(square);
         $('.info__num--rooms i').text(rooms);
         $('.info__num--doc').attr('href', doc);
@@ -92,12 +117,14 @@ jQuery(document).ready(function($) {
     $('.goBack').click(function(){ 
         $('#floors').addClass('shown');
         $('#flats').removeClass('shown');
+        $('.info__num--number span').text('№ квартиры');
         showHidePdf('hide');
     });
 
     //----------------- close popup
     $('.closePopup').click(function(){
         container.removeClass('active');
+        $('.info__num--number span').text('№ квартиры');
         $('.housePage').removeClass('overlay');
     });
 

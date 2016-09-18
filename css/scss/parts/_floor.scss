@@ -126,6 +126,16 @@
             }
         }
     }
+    &:not(.shown) {
+        .info__num--number {
+            i:not(.block) {
+                display: none;
+            }
+        }
+        i.block {
+            display: block;
+        }
+    }
 }
 
 .floors__title {
