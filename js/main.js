@@ -361,23 +361,41 @@ jQuery(document).ready(function($) {
             pins.push(m)
         }
 
-        map.addListener('click', function(e) {
+        /*map.addListener('click', function(e) {
             console.log('{lat: '+e.latLng.lat()+', lng: '+e.latLng.lng()+'},');
-        });
+        });*/
 
         map.addListener('zoom_changed', function(){
-            console.log(map.getZoom());
 
             if ( 16 > map.getZoom() ) {
                 for (var i = 0; i < pins.length; i++) {
+                    var markerImage = new google.maps.MarkerImage( pins[i].icon.url.replace('-min.png', '.png') );
+                    pins[i].setIcon(markerImage)
                     pins[i].setMap(null);
                 }
-            } else {
+
+                marker.setIcon( new google.maps.MarkerImage( marker.icon.url.replace('-min.png', '.png') ) );
+                bayil_polygon.setMap(null);
+
+            } else if ( map.getZoom() == 16 ) {
                 for (var i = 0; i < pins.length; i++) {
+                    var markerImage = new google.maps.MarkerImage( pins[i].icon.url.replace('.png', '-min.png') );
+                    pins[i].setIcon(markerImage)
                     pins[i].setMap(map);
                 }
-            }
 
+                marker.setIcon( new google.maps.MarkerImage( marker.icon.url.replace('.png', '-min.png') ) );
+                bayil_polygon.setMap(map);
+            } else {
+                for (var i = 0; i < pins.length; i++) {
+                    var markerImage = new google.maps.MarkerImage( pins[i].icon.url.replace('-min.png', '.png') );
+                    pins[i].setIcon(markerImage)
+                    pins[i].setMap(map);
+                }
+
+                marker.setIcon( new google.maps.MarkerImage( marker.icon.url.replace('-min.png', '.png') ) );
+                bayil_polygon.setMap(map);
+            }
         })
 
         var polygon = [
@@ -428,7 +446,7 @@ jQuery(document).ready(function($) {
     }
 
     if ( $('#location_map').length > 0) {
-        locationMap_initialize();   
+        locationMap_initialize();  
     }
 
 
